@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/the_wall_icon.svg">
+    <meta name="description" content="Register for a The Wall account">
+    <meta name="author" content="Jan Dreau Ganggangan">
+    <title>The Wall | Sign In/Up Page</title>
+
+    <!-- Less -->
+    <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="login_container">
+            <form id="login_form" action="/" method="POST">
+                <div class="form_header">
+                    <h3>Welcome,<span>Register a new account.</span></h3>
+
+                </div>
+                
+                <div class="form_group form_inline_group">
+                    <label for="first_name">
+                        <span>First Name</span>
+                        <input type="text" name="first_name" id="first_name">
+                    </label>
+                    <label for="last_name">
+                        <span>Last Name</span>
+                        <input type="text" name="last_name" id="last_name">
+                    </label>
+                </div>
+                <div class="form_group">
+                    <label for="email_address">
+                        <span>Email</span>
+                        <input type="email" name="email_address" id="email_address">
+                    </label>
+                </div>
+                
+                <div class="form_group">
+                    <label for="password">
+                        <span>Password</span>
+                        <input type="password" name="password" id="password">
+                    </label>
+                </div>
+                <button type="submit" class="action_btn">Sign up</button>
+                <p>Already have an account? <a href="./login.html">Login</a></p>
+            </form>
+            <div id="login_side"></div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./../assets/js/index.js"></script>
+    <script src="./../assets/js/global.js"></script>
+</body>
+</html>

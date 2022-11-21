@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/the_wall_icon.svg"/>
+    <meta name="description" content="Post your thoughts on the The Wall">
+    <meta name="author" content="Jan Dreau Ganggangan">
+    <title>The Wall | Sign In/Up Page</title>
+
+    <!-- Less -->
+    <link rel="stylesheet" href="../assets/css/wall.css"/>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="../views/wall.html">
+                <img src="../assets/images/the_wall_small_logo.svg" alt="The Wall Logo">
+            </a>
+            <div class="placeholder"></div>
+            <div id="user_details">
+                <div class="user_name">Jadee Ganggangan</div>
+                <a href="../views/index.html" class="logout_btn">Logout</a>
+            </div>
+        </header>
+        <div id="wall_container">
+            <div id="greetings_content">
+                <h2>Hello Jadee</h2>
+                <h1>Welcome to V88 Forum Dashboard</h1>
+            </div>
+            <form method="POST" action="/" id="post_form">
+                <div class="textarea_group">
+                    <textarea name="post_content" id="post_content" class="post_content" placeholder="Post your Topic..."></textarea>
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+            <div id="posts_content">
+                <h4>Recent Forums</h4>
+                <ul id="posts_list"></ul>
+                <div id="posts_placeholder">No post yet.</div>
+            </div>
+        </div>
+        <div id="clones_container">
+            <ul id="clones_list">
+                <li class="post_item post_item_clone">
+                    <form action="/" method="post" class="edit_post_form edit_content_form">
+                        <div class="textarea_group">
+                            <textarea name="post_content" class="post_content item_content" placeholder="Edit your Topic..."></textarea>
+                            <button type="submit save_edit_btn">Save</button>
+                        </div>
+                    </form>
+                    <p class="post_content item_content_text"></p>
+                    <div class="user_detail_actions">
+                        <div class="user_details">Jadee Ganggangan | <span class="total_responses">0 Responses</span></div>
+                        <div class="user_actions">
+                            <button class="content_action_btn edit_btn"></button>
+                            <button class="content_action_btn delete_btn"></button>
+                            <div class="confirm_delete">
+                                <h4>Confirm delete?</h4>
+                                <button class="no_btn">No</button>
+                                <button class="yes_btn">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="/" method="post" class="add_comment_form">
+                        <div class="textarea_group">
+                            <textarea name="comment_content" class="comment_content" placeholder="Send a comment..."></textarea>
+                            <button type="submit">Comment</button>
+                        </div>
+                    </form>
+                    <ul class="comments_list"></ul>
+                </li>
+                <li class="comment_reply_item comment_reply_item_clone">
+                    <form action="/" method="post" class="edit_comment_reply_form edit_content_form">
+                        <div class="textarea_group">
+                            <textarea name="comment_content" class="comment_content item_content" placeholder="Type something here..."></textarea>
+                            <button type="submit save_edit_btn">Save</button>
+                        </div>
+                    </form>
+                    <p class="comment_content item_content_text"></p>
+                    <div class="user_detail_actions">
+                        <div class="user_details">Jadee Ganggangan</div>
+                        <div class="user_actions">
+                            <button class="content_action_btn edit_btn"></button>
+                            <button class="content_action_btn delete_btn"></button>
+                            <div class="confirm_delete">
+                                <h4>Confirm delete?</h4>
+                                <button class="no_btn">No</button>
+                                <button class="yes_btn">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="/" method="post" class="add_comment_reply_form">
+                        <div class="textarea_group">
+                            <textarea name="comment_content" class="comment_content" placeholder="Send a reply..."></textarea>
+                            <button type="submit">Comment</button>
+                        </div>
+                    </form>
+                    <ul class="replies_list"></ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/wall.js"></script>
+    <script src="../assets/js/global.js"></script>
+</body>
+</html>

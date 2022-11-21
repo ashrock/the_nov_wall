@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Roboto-Black;
+  src: url("../fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Italic;
+  src: url("../fonts/Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+*,
+html,
+body {
+  color: #6D7186;
+  font: 14px/17px Roboto-Regular;
+  margin: 0px;
+  padding: 0px;
+}
+button {
+  background: #00A3FF;
+  border: none;
+  border-radius: 9px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font: 14px/38px Roboto-Bold;
+  min-width: 100px;
+  padding: 0px 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+}
+.edit_content_form {
+  display: none;
+}
+.edit_content_form.show {
+  display: block !important;
+}
+.edit_content_form.show ~ * {
+  display: none !important;
+}
+body {
+  background: #2C2D34;
+}
+#login_container {
+  display: flex;
+  margin: 220px auto;
+  min-height: 671px;
+  width: 876px;
+}
+#login_container #login_form {
+  background: #1D1F2B;
+  border-radius: 20px 0px 0px 20px;
+  flex-grow: 1;
+  padding: 75px 78px;
+}
+#login_container #login_form .form_header::before {
+  background: url("../images/the_wall_icon.svg");
+  content: "";
+  display: inline-block;
+  height: 46px;
+  margin-right: 30px;
+  width: 46px;
+}
+#login_container #login_form .form_header h3 {
+  display: inline-block;
+  color: #FFFFFF;
+  font: 21px/17px Roboto-Regular;
+  margin-bottom: 50px;
+}
+#login_container #login_form .form_header h3 span {
+  display: block;
+  margin-top: 12px;
+}
+#login_container #login_form .form_group {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#login_container #login_form .form_group.form_inline_group {
+  display: flex;
+}
+#login_container #login_form .form_group.form_inline_group label {
+  flex-grow: 1;
+}
+#login_container #login_form .form_group.form_inline_group label:first-child {
+  margin-right: 15px;
+}
+#login_container #login_form .form_group label {
+  display: block;
+  width: 100%;
+}
+#login_container #login_form .form_group label span {
+  display: block;
+  font: 14px/10px Roboto-Regular;
+  margin-bottom: 12px;
+}
+#login_container #login_form .form_group label input {
+  background: #31354F;
+  border: 1px solid #31354F;
+  border-radius: 9px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  line-height: 58px;
+  outline: none;
+  padding: 0px 20px;
+  width: 100%;
+}
+#login_container #login_form .form_group label input:focus {
+  border: 1px solid #00A3FF;
+}
+#login_container #login_form .form_group label input.error {
+  border-color: #EB5757;
+}
+#login_container #login_form .action_btn {
+  font: 21px/60px Roboto-Bold;
+  line-height: 60px;
+  margin-top: 10px;
+  width: 100%;
+}
+#login_container #login_form p {
+  font: 17.51px/13.51px Roboto-Regular;
+  margin-top: 40px;
+  text-align: center;
+}
+#login_container #login_form p * {
+  font: inherit;
+  color: #00A3FF;
+}
+#login_container #login_side {
+  background: #3B3C43 url("../../assets/images/right_panel_sign_up_in.svg") no-repeat;
+  background-position: -36px -42px;
+  border-radius: 0px 20px 20px 0px;
+  width: 250px;
+}
